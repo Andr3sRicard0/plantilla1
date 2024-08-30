@@ -1,21 +1,24 @@
 <nav>
     <div class="navTitle">
-        <a href="">Prointe <i class="fa-solid fa-fire-extinguisher"></i></a>
+        <a href="">PROINTE <i class="fa-solid fa-fire-extinguisher"></i></a>
     </div>
     <button class="navbar-toggler" (click)="toggleMenu()">
         <i class="fa-solid fa-bars"></i>
     </button>
     <div class="navbarStyle" [ngClass]="{'show-menu': isMenuOpen}">
-        <a href=""><div class="navSubtitles">
+        <a href="home/dashboard#inicio"><div class="navSubtitles">
             Inicio <i class="fa-solid fa-house"></i>
         </div></a>
-        <a href=""><div class="navSubtitles">
+        <a href="home/dashboard#servicios"><div class="navSubtitles">
             Servicios <i class="fa-solid fa-hand"></i>
         </div></a>
-        <a href=""><div class="navSubtitles">
+        <a href="home/productos"><div class="navSubtitles">
+            Productos <i class="fa-solid fa-shop"></i>
+        </div></a>
+        <a href="home/dashboard#ubicacion"><div class="navSubtitles">
             Ubicación <i class="fa-solid fa-map-marker-alt"></i>
         </div></a>
-        <a href=""><div class="navSubtitles">
+        <a href="home/dashboard#contactos"><div class="navSubtitles">
             Contactos <i class="fa-solid fa-phone"></i>
         </div></a>
     </div>

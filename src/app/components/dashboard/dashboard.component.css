@@ -94,4 +94,18 @@ iframe{
     .carrusel img {
         height: 300px;
     }
+    .itemsContainer{
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .itemsImg{
+        width: 100%;
+    }
+    .itemsImg img{
+        width: 100%;
+        height: 300px;
+        display: grid;
+    }
 }
