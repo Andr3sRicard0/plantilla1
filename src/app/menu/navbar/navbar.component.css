@@ -1,0 +1,76 @@
+/*Inicio Navbar*/
+nav {
+    background: #ff0000;
+    height: 58px;
+    position: relative;
+}
+.navbarStyle {
+    background: #ff0000;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    max-height: 0; /* Inicialmente oculto */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transición suave */
+}
+.navbarStyle.show-menu {
+    max-height: 300px; /* Ajusta según el contenido */
+    opacity: 1;
+}
+.navTitle {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+.navSubtitles {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #440000;
+    transition: 0.3s;
+}
+
+.navbar-toggler {
+    display: none;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 46px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .navbarStyle {
+        display: block; /* Necesario para que max-height funcione */
+        overflow: hidden;
+    }
+    .navSubtitles {
+        background: #ff2c2c;
+        font-size: 25px;
+        margin: 0px;
+        width: 100%;
+        padding: 5px;
+        transition: 0.5s;
+    }
+    .navSubtitles:hover{
+        background: #440000;
+        transition: 0.3s;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    a:hover{
+        color: #ffffff;
+    }
+}
+/*Fin Navbar*/
