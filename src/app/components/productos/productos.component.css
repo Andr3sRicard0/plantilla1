@@ -1,4 +1,54 @@
-img{
+body{
+    background: #e4e4e4;
+}
+h1{
+    width: 95%;
+    margin: auto;
+    background: #ffffff;
+    color: #ff0000;
+}
+.productosBox{
+    padding: 15px;
+    width: 95%;
+    margin: auto;
+    background: #ffffff;
+}
+.productosItemsBox{
+    display: flex;
+    width: 100%;
+    background: #e4e4e4;
+}
+.productosItems{
+    display: grid;
+    align-items: center;
+    width: 50%;
+}
+.productosItems img{
     display: block;
     margin: 0 auto;
+    height: 250px;
+    width: 70%;
+    padding: 10px;
+    transition: 1s;
+}
+.productosItems button{
+    margin: 5px;
+}
+.productosItems img:hover{
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+@media (max-width: 750px){
+    .productosItemsBox{
+        display: grid;        
+    }
+    .productosItems{
+        display: grid;
+        padding: 10px;
+        width: 100%;
+    }
+    .productosItems img{
+        height: 250px;
+        width: 90%;
+    }
 }

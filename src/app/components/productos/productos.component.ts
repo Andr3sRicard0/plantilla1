@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent {
-
+  prueba(){
+    alert("Seguimos en Desarrollo Prointe");
+  }
 }
