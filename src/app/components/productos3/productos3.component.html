@@ -1,0 +1,163 @@
+<body>
+    <br>
+    <h1 class="text-center">Productos</h1>
+    <div class="tabsbox">
+        <a class="tabsItems" href="/home/productos2">
+            <i class="fa-solid fa-arrow-alt-circle-left"></i>
+        </a>
+        <a class="tabsItems" href="/home/productos">
+            1
+        </a>
+        <a class="tabsItems" href="/home/productos2">
+            2
+        </a>
+        <a class="tabsItems actualItem" href="/home/productos3">
+            3
+        </a>
+        <a class="tabsItems" href="/home/productos3">
+            <i class="fa-solid fa-arrow-alt-circle-right"></i>
+        </a>
+    </div>
+    <div class="productosBox">
+        <div class="productosItemsBox">
+            <div class="productosItems">
+                <img src="../../../assets/img/productos/extintorpqs1lb.JPEG" alt="">
+            </div>
+            <div class="productosItems">
+                <h3>Extintor de polvo químico seco 1 lb</h3>
+                <p><Strong>Detalles:</Strong> Compacto y ligero, adecuado para manejar pequeños incendios con facilidad.
+                    Su tamaño facilita el almacenamiento y uso rápido.</p>
+                <p><Strong>Precio:</Strong> $ 8.00</p>
+                <form>
+                    <div class="cantidadBox">
+                        <button class="variableButton" (click)="minusButton('quantitySenaleticaPlastico')">-</button>
+                        <input class="cantidad" (change)="onQuantityChange($event, 'quantitySenaleticaPlastico')"
+                            id="quantitySenaleticaPlastico" type="number"
+                            [value]="quantityMap['quantitySenaleticaPlastico']" readonly>
+                        <button class="variableButton" (click)="plusButton('quantitySenaleticaPlastico')">+</button>
+                    </div>
+                    <button (click)="submitCarShop('quantitySenaleticaPlastico')" class="btn btn-danger carritoButton"
+                        type="button">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="productosBox">
+        <div class="productosItemsBox">
+            <div class="productosItems">
+                <img src="../../../assets/img/productos/extintorpqs2lb.JPEG" alt="">
+            </div>
+            <div class="productosItems">
+                <h3>Extintor de polvo químico seco 2 lb</h3>
+                <p><Strong>Detalles:</Strong> Proporciona una mayor capacidad de extinción que el modelo de 1 lb,
+                    ofreciendo un equilibrio entre tamaño y eficacia.</p>
+                <p><Strong>Precio:</Strong> $ 12.00</p>
+                <form>
+                    <div class="cantidadBox">
+                        <button class="variableButton" (click)="minusButton('quantityBotiquin')">-</button>
+                        <input class="cantidad" (change)="onQuantityChange($event, 'quantityBotiquin')"
+                            id="quantityBotiquin" type="number" [value]="quantityMap['quantityBotiquin']" readonly>
+                        <button class="variableButton" (click)="plusButton('quantityBotiquin')">+</button>
+                    </div>
+                    <button (click)="submitCarShop('quantityBotiquin')" class="btn btn-danger carritoButton"
+                        type="submit">Agregar
+                        al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="productosBox">
+        <div class="productosItemsBox">
+            <div class="productosItems">
+                <img src="../../../assets/img/productos/extintores5-10-20.JPEG" alt="">
+            </div>
+            <div class="productosItems">
+                <h3>Extintor de polvo químico seco 5 lb</h3>
+                <p><Strong>Detalles:</Strong> Ofrece una cantidad significativa de agente extintor, ideal para enfrentar
+                    incendios de mayor magnitud con eficacia.</p>
+                <p><Strong>Precio:</Strong> $ 16.00</p>
+                <form>
+                    <div class="cantidadBox">
+                        <button class="variableButton" (click)="minusButton('quantityDetectorHumo')">-</button>
+                        <input class="cantidad" (change)="onQuantityChange($event, 'quantityDetectorHumo')"
+                            id="quantityDetectorHumo" type="number" [value]="quantityMap['quantityDetectorHumo']"
+                            readonly>
+                        <button class="variableButton" (click)="plusButton('quantityDetectorHumo')">+</button>
+                    </div>
+                    <button (click)="submitCarShop('quantityDetectorHumo')" class="btn btn-danger carritoButton"
+                        type="submit">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Inicio de box-->
+    <div class="productosBox">
+        <div class="productosItemsBox">
+            <div class="productosItems">
+                <img src="../../../assets/img/productos/extintores5-10-20.JPEG" alt="">
+            </div>
+            <div class="productosItems">
+                <h3>Extintor de polvo químico seco 10 lb</h3>
+                <p><Strong>Detalles:</Strong> Ideal para espacios de tamaño medio donde se necesita una mayor capacidad
+                    de extinción. Proporciona un buen equilibrio entre portabilidad y eficacia.</p>
+                <p><Strong>Precio:</Strong> $ 25.00</p>
+                <form>
+                    <div class="cantidadBox">
+                        <button class="variableButton" (click)="minusButton('quantityKitCarretera')">-</button>
+                        <input class="cantidad" (change)="onQuantityChange($event, 'quantityKitCarretera')"
+                            id="quantityKitCarretera" type="number" [value]="quantityMap['quantityKitCarretera']"
+                            readonly>
+                        <button class="variableButton" (click)="plusButton('quantityKitCarretera')">+</button>
+                    </div>
+                    <button (click)="submitCarShop('quantityKitCarretera')" class="btn btn-danger carritoButton"
+                        type="submit">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Fin de Box-->
+    <!--Inicio de box-->
+    <div class="productosBox">
+        <div class="productosItemsBox">
+            <div class="productosItems">
+                <img src="../../../assets/img/productos/extintores5-10-20.JPEG" alt="">
+            </div>
+            <div class="productosItems">
+                <h3>Extintor de polvo químico seco 20 lb</h3>
+                <p><Strong>Detalles:</Strong> Diseñado para áreas más grandes o entornos industriales, ofrece una amplia cobertura y capacidad de extinción para enfrentar incendios de gran magnitud.</p>
+                <p><Strong>Precio:</Strong> $ 40.00</p>
+                <form>
+                    <div class="cantidadBox">
+                        <button class="variableButton" (click)="minusButton('quantitySellosPlasticos')">-</button>
+                        <input class="cantidad" (change)="onQuantityChange($event, 'quantitySellosPlasticos')"
+                            id="quantitySellosPlasticos" type="number" [value]="quantityMap['quantitySellosPlasticos']"
+                            readonly>
+                        <button class="variableButton" (click)="plusButton('quantitySellosPlasticos')">+</button>
+                    </div>
+                    <button (click)="submitCarShop('quantitySellosPlasticos')" class="btn btn-danger carritoButton"
+                        type="submit">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Fin de Box-->
+    <div class="tabsbox">
+        <a class="tabsItems" href="/home/productos2">
+            <i class="fa-solid fa-arrow-alt-circle-left"></i>
+        </a>
+        <a class="tabsItems" href="/home/productos">
+            1
+        </a>
+        <a class="tabsItems" href="/home/productos2">
+            2
+        </a>
+        <a class="tabsItems actualItem" href="/home/productos3">
+            3
+        </a>
+        <a class="tabsItems" href="/home/productos3">
+            <i class="fa-solid fa-arrow-alt-circle-right"></i>
+        </a>
+    </div>
+    <br>
+</body>

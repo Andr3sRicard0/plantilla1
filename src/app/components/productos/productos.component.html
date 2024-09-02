@@ -1,17 +1,45 @@
 <body>
   <br>
   <h1 class="text-center">Productos</h1>
+  <div class="tabsbox">
+    <a class="tabsItems" href="/home/productos">
+      <i class="fa-solid fa-arrow-alt-circle-left"></i>
+    </a>
+    <a class="tabsItems actualItem" href="/home/productos">
+      1
+    </a>
+    <a class="tabsItems" href="/home/productos2">
+      2
+    </a>
+    <a class="tabsItems" href="/home/productos3">
+      3
+    </a>
+    <a class="tabsItems" href="/home/productos2">
+      <i class="fa-solid fa-arrow-alt-circle-right"></i>
+    </a>
+  </div>
   <div class="productosBox">
     <div class="productosItemsBox">
       <div class="productosItems">
         <img src="../../../assets/img/productos/senales.JPEG" alt="">
       </div>
       <div class="productosItems">
-        <h3>Señaletica</h3>
-        <p><Strong>Detalles:</Strong> Señalética de plástico con diversa información para colocar en la pared, diseñada
-          para ofrecer indicaciones claras puedes pedir cualquier diseño.</p>
+        <h3>Señaletica de Plástico</h3>
+        <p><Strong>Detalles:</Strong> Señalética de plástico personalizada. Señales duraderas para pared con información
+          clara. Puedes elegir entre diseños estándar o pedir uno personalizado.</p>
         <p><Strong>Precio:</Strong> $ 3.50</p>
-        <button class="button btn btn-primary">Prueba</button>
+        <form>
+          <div class="cantidadBox">
+            <button class="variableButton" (click)="minusButton('quantitySenaleticaPlastico')">-</button>
+            <input class="cantidad" (change)="onQuantityChange($event, 'quantitySenaleticaPlastico')"
+              id="quantitySenaleticaPlastico" type="number" [value]="quantityMap['quantitySenaleticaPlastico']"
+              readonly>
+            <button class="variableButton" (click)="plusButton('quantitySenaleticaPlastico')">+</button>
+          </div>
+          <button (click)="submitCarShop('quantitySenaleticaPlastico')" class="btn btn-danger carritoButton"
+            type="button">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+        </form>
+
       </div>
     </div>
   </div>
@@ -25,7 +53,16 @@
         <p><Strong>Detalles:</Strong> Botiquín negro completo con suministros esenciales para primeros auxilios,
           incluyendo vendajes, antisépticos y herramientas básicas.</p>
         <p><Strong>Precio:</Strong> $ 8.00</p>
-        <button (click)="prueba()" class="button btn btn-primary">Prueba</button>
+        <form>
+          <div class="cantidadBox">
+            <button class="variableButton" (click)="minusButton('quantityBotiquin')">-</button>
+            <input class="cantidad" (change)="onQuantityChange($event, 'quantityBotiquin')" id="quantityBotiquin"
+              type="number" [value]="quantityMap['quantityBotiquin']" readonly>
+            <button class="variableButton" (click)="plusButton('quantityBotiquin')">+</button>
+          </div>
+          <button (click)="submitCarShop('quantityBotiquin')" class="btn btn-danger carritoButton" type="submit">Agregar
+            al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+        </form>
       </div>
     </div>
   </div>
@@ -36,10 +73,20 @@
       </div>
       <div class="productosItems">
         <h3>Detector de Humo</h3>
-        <p><Strong>Detalles:</Strong> Detector de humo marca Vexhum, diseñado para detectar humo y alertar sobre posibles incendios con alta precisión.</p>
-        <p><strong>Marca:</strong> VEXHUM</p>
+        <p><Strong>Detalles:</Strong> Detector de humo marca Vexhum, de alta precisión para detectar humo y alertar
+          sobre posibles incendios. Funciona con corriente, ideal para instalaciones donde se prefiera una conexión
+          permanente.</p>
         <p><Strong>Precio:</Strong> $ 25.00</p>
-        <button class="button btn btn-primary">Prueba</button>
+        <form>
+          <div class="cantidadBox">
+            <button class="variableButton" (click)="minusButton('quantityDetectorHumo')">-</button>
+            <input class="cantidad" (change)="onQuantityChange($event, 'quantityDetectorHumo')"
+              id="quantityDetectorHumo" type="number" [value]="quantityMap['quantityDetectorHumo']" readonly>
+            <button class="variableButton" (click)="plusButton('quantityDetectorHumo')">+</button>
+          </div>
+          <button (click)="submitCarShop('quantityDetectorHumo')" class="btn btn-danger carritoButton"
+            type="submit">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+        </form>
       </div>
     </div>
   </div>
@@ -51,13 +98,23 @@
       </div>
       <div class="productosItems">
         <h3>Kit de Carretera</h3>
-        <p><Strong>Detalles:</Strong> Kit de Carretera con extintor de 1lb y un triángulo reflectivo.</p>
+        <p><Strong>Detalles:</Strong> Kit de carretera con extintor de 1 lb de polvo químico seco y triángulo
+          reflectivo, todo en un estuche negro compacto para llevar en el vehículo.</p>
         <p><Strong>Precio:</Strong> $ 25.00</p>
-        <button class="button btn btn-primary">Prueba</button>
+        <form>
+          <div class="cantidadBox">
+            <button class="variableButton" (click)="minusButton('quantityKitCarretera')">-</button>
+            <input class="cantidad" (change)="onQuantityChange($event, 'quantityKitCarretera')"
+              id="quantityKitCarretera" type="number" [value]="quantityMap['quantityKitCarretera']" readonly>
+            <button class="variableButton" (click)="plusButton('quantityKitCarretera')">+</button>
+          </div>
+          <button (click)="submitCarShop('quantityKitCarretera')" class="btn btn-danger carritoButton"
+            type="submit">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+        </form>
       </div>
     </div>
   </div>
-  <!--Inicio de fin-->
+  <!--Fin de Box-->
   <!--Inicio de box-->
   <div class="productosBox">
     <div class="productosItemsBox">
@@ -66,12 +123,64 @@
       </div>
       <div class="productosItems">
         <h3>Sellos Plásticos</h3>
-        <p><Strong>Detalles:</Strong> Diseñados para verificar el año de recarga del extintor.</p>
+        <p><Strong>Detalles:</Strong> Sellos plásticos duraderos diseñados para verificar el año de recarga del
+          extintor. Ideales para asegurar el control y cumplimiento de mantenimiento.</p>
         <p><Strong>Precio:</Strong> $ 0.10</p>
-        <button class="button btn btn-primary">Prueba</button>
+        <form>
+          <div class="cantidadBox">
+            <button class="variableButton" (click)="minusButton('quantitySellosPlasticos')">-</button>
+            <input class="cantidad" (change)="onQuantityChange($event, 'quantitySellosPlasticos')"
+              id="quantitySellosPlasticos" type="number" [value]="quantityMap['quantitySellosPlasticos']" readonly>
+            <button class="variableButton" (click)="plusButton('quantitySellosPlasticos')">+</button>
+          </div>
+          <button (click)="submitCarShop('quantitySellosPlasticos')" class="btn btn-danger carritoButton"
+            type="submit">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+        </form>
       </div>
     </div>
   </div>
-  <!--Inicio de fin-->
+  <!--Fin de Box-->
+  <!--Inicio de box-->
+  <div class="productosBox">
+    <div class="productosItemsBox">
+      <div class="productosItems">
+        <img src="../../../assets/img/productos/sellosmetalicos.JPEG" alt="">
+      </div>
+      <div class="productosItems">
+        <h3>Sellos Metálicos</h3>
+        <p><Strong>Detalles:</Strong> Sellos metálicos de inspección para extintores. Permiten registrar y verificar las
+          fechas de revisión y mantenimiento, asegurando el cumplimiento de las normas de seguridad.</p>
+        <p><Strong>Precio:</Strong> $ 1.00</p>
+        <form>
+          <div class="cantidadBox">
+            <button class="variableButton" (click)="minusButton('quantitySellosMetalicos')">-</button>
+            <input class="cantidad" (change)="onQuantityChange($event, 'quantitySellosMetalicos')"
+              id="quantitySellosMetalicos" type="number" [value]="quantityMap['quantitySellosMetalicos']" readonly>
+            <button class="variableButton" (click)="plusButton('quantitySellosMetalicos')">+</button>
+          </div>
+          <button (click)="submitCarShop('quantitySellosMetalicos')" class="btn btn-danger carritoButton"
+            type="submit">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Fin de Box-->
+  <div class="tabsbox">
+    <a class="tabsItems" href="/home/productos">
+      <i class="fa-solid fa-arrow-alt-circle-left"></i>
+    </a>
+    <a class="tabsItems actualItem" href="/home/productos">
+      1
+    </a>
+    <a class="tabsItems" href="/home/productos2">
+      2
+    </a>
+    <a class="tabsItems" href="/home/productos3">
+      3
+    </a>
+    <a class="tabsItems" href="/home/productos2">
+      <i class="fa-solid fa-arrow-alt-circle-right"></i>
+    </a>
+  </div>
   <br>
 </body>

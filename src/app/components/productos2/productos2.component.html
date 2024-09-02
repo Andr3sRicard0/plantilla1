@@ -1,0 +1,176 @@
+<body>
+    <br>
+    <h1 class="text-center">Productos</h1>
+    <div class="tabsbox">
+      <a class="tabsItems" href="/home/productos">
+        <i class="fa-solid fa-arrow-alt-circle-left"></i>
+      </a>
+      <a class="tabsItems" href="/home/productos">
+        1
+      </a>
+      <a class="tabsItems actualItem" href="/home/productos2">
+        2
+      </a>
+      <a class="tabsItems" href="/home/productos3">
+        3
+      </a>
+      <a class="tabsItems" href="/home/productos3">
+        <i class="fa-solid fa-arrow-alt-circle-right"></i>
+      </a>
+    </div>
+    <div class="productosBox">
+      <div class="productosItemsBox">
+        <div class="productosItems">
+          <img src="../../../assets/img/productos/correasdeseguridad.JPEG" alt="">
+        </div>
+        <div class="productosItems">
+          <h3>Correas de Seguridad</h3>
+          <p><Strong>Detalles:</Strong> Correas de plástico resistentes para asegurar la boquilla de los extintores, evitando movimientos accidentales. Fáciles de instalar y duraderas.</p>
+          <p><Strong>Precio:</Strong> $ 0.10</p>
+          <form>
+            <div class="cantidadBox">
+              <button class="variableButton" (click)="minusButton('quantitySenaleticaPlastico')">-</button>
+              <input class="cantidad" (change)="onQuantityChange($event, 'quantitySenaleticaPlastico')" id="quantitySenaleticaPlastico" type="number" [value]="quantityMap['quantitySenaleticaPlastico']" readonly>
+              <button class="variableButton" (click)="plusButton('quantitySenaleticaPlastico')">+</button>
+            </div>
+            <button (click)="submitCarShop('quantitySenaleticaPlastico')" class="btn btn-danger carritoButton" type="button">Agregar al carrito <i class="fa-solid fa-shopping-cart"></i></button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+    <div class="productosBox">
+      <div class="productosItemsBox">
+        <div class="productosItems">
+          <img src="../../../assets/img/productos/manometro.JPEG" alt="">
+        </div>
+        <div class="productosItems">
+          <h3>Manómetro</h3>
+          <p><Strong>Detalles:</Strong> Instrumento para medir la presión en sistemas de extintores, asegurando su correcto funcionamiento y mantenimiento.</p>
+          <p><Strong>Precio:</Strong> $ 2.50</p>
+          <form>
+            <div class="cantidadBox">
+              <button class="variableButton" (click)="minusButton('quantityBotiquin')">-</button>
+              <input class="cantidad" (change)="onQuantityChange($event, 'quantityBotiquin')" id="quantityBotiquin" type="number" [value]="quantityMap['quantityBotiquin']"
+                readonly>
+              <button class="variableButton" (click)="plusButton('quantityBotiquin')">+</button>
+            </div>
+            <button (click)="submitCarShop('quantityBotiquin')" class="btn btn-danger carritoButton" type="submit">Agregar al carrito <i
+                class="fa-solid fa-shopping-cart"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="productosBox">
+      <div class="productosItemsBox">
+        <div class="productosItems">
+          <img src="../../../assets/img/productos/triangulos.JPEG" alt="">
+        </div>
+        <div class="productosItems">
+          <h3>Triángulo reflectivo</h3>
+          <p><Strong>Detalles:</Strong>Mejora la visibilidad en emergencias con su diseño compacto y reflectante. Ideal para señalización en carretera.</p>
+          <p><Strong>Precio:</Strong> $ 6.50</p>
+          <form>
+            <div class="cantidadBox">
+              <button class="variableButton" (click)="minusButton('quantityDetectorHumo')">-</button>
+              <input class="cantidad" (change)="onQuantityChange($event, 'quantityDetectorHumo')" id="quantityDetectorHumo" type="number" [value]="quantityMap['quantityDetectorHumo']"
+                readonly>
+              <button class="variableButton" (click)="plusButton('quantityDetectorHumo')">+</button>
+            </div>
+            <button (click)="submitCarShop('quantityDetectorHumo')" class="btn btn-danger carritoButton" type="submit">Agregar al carrito <i
+                class="fa-solid fa-shopping-cart"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Inicio de box-->
+    <div class="productosBox">
+      <div class="productosItemsBox">
+        <div class="productosItems">
+          <img src="../../../assets/img/productos/lamparaemergencia.JPEG" alt="">
+        </div>
+        <div class="productosItems">
+          <h3>Lámpara de Emergencia</h3>
+          <p><Strong>Detalles:</Strong>  Se enciende automáticamente al apagarse la luz, proporcionando iluminación inmediata en locales y negocios. Ideal para mantener visibilidad durante cortes de energía.</p>
+          <p><Strong>Precio:</Strong> $ 22.00</p>
+          <form>
+            <div class="cantidadBox">
+              <button class="variableButton" (click)="minusButton('quantityKitCarretera')">-</button>
+              <input class="cantidad" (change)="onQuantityChange($event, 'quantityKitCarretera')" id="quantityKitCarretera" type="number" [value]="quantityMap['quantityKitCarretera']"
+                readonly>
+              <button class="variableButton" (click)="plusButton('quantityKitCarretera')">+</button>
+            </div>
+            <button (click)="submitCarShop('quantityKitCarretera')" class="btn btn-danger carritoButton" type="submit">Agregar al carrito <i
+                class="fa-solid fa-shopping-cart"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Fin de Box-->
+    <!--Inicio de box-->
+    <div class="productosBox">
+      <div class="productosItemsBox">
+        <div class="productosItems">
+          <img src="../../../assets/img/productos/detectordegas.JPEG" alt="">
+        </div>
+        <div class="productosItems">
+          <h3>Detector de gas</h3>
+          <p><Strong>Detalles:</Strong> Alerta sobre fugas de gas detectando niveles peligrosos, ideal para mantener la seguridad en espacios cerrados.</p>
+          <p><Strong>Precio:</Strong> $ 22.00</p>
+          <form>
+            <div class="cantidadBox">
+              <button class="variableButton" (click)="minusButton('quantitySellosPlasticos')">-</button>
+              <input class="cantidad" (change)="onQuantityChange($event, 'quantitySellosPlasticos')" id="quantitySellosPlasticos" type="number" [value]="quantityMap['quantitySellosPlasticos']"
+                readonly>
+              <button class="variableButton" (click)="plusButton('quantitySellosPlasticos')">+</button>
+            </div>
+            <button (click)="submitCarShop('quantitySellosPlasticos')" class="btn btn-danger carritoButton" type="submit">Agregar al carrito <i
+                class="fa-solid fa-shopping-cart"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Fin de Box-->
+    <!--Inicio de box-->
+    <div class="productosBox">
+      <div class="productosItemsBox">
+        <div class="productosItems">
+          <img src="../../../assets/img/productos/detectordehumobate.JPEG" alt="">
+        </div>
+        <div class="productosItems">
+          <h3>Detector de Humo a Batería</h3>
+          <p><Strong>Detalles:</Strong> Dispositivo autónomo que detecta humo y emite una alarma para advertir sobre posibles incendios, funcionando con batería para instalación sin cables.</p>
+          <p><Strong>Precio:</Strong> $ 8.00</p>
+          <form>
+            <div class="cantidadBox">
+              <button class="variableButton" (click)="minusButton('quantitySellosMetalicos')">-</button>
+              <input class="cantidad" (change)="onQuantityChange($event, 'quantitySellosMetalicos')" id="quantitySellosMetalicos" type="number" [value]="quantityMap['quantitySellosMetalicos']"
+                readonly>
+              <button class="variableButton" (click)="plusButton('quantitySellosMetalicos')">+</button>
+            </div>
+            <button (click)="submitCarShop('quantitySellosMetalicos')" class="btn btn-danger carritoButton" type="submit">Agregar al carrito <i
+                class="fa-solid fa-shopping-cart"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Fin de Box-->
+    <div class="tabsbox">
+      <a class="tabsItems" href="/home/productos">
+        <i class="fa-solid fa-arrow-alt-circle-left"></i>
+      </a>
+      <a class="tabsItems" href="/home/productos">
+        1
+      </a>
+      <a class="tabsItems actualItem" href="/home/productos2">
+        2
+      </a>
+      <a class="tabsItems" href="/home/productos3">
+        3
+      </a>
+      <a class="tabsItems" href="/home/productos3">
+        <i class="fa-solid fa-arrow-alt-circle-right"></i>
+      </a>
+    </div>
+    <br>
+  </body>

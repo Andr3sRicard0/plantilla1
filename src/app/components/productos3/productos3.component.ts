@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-productos',
-  templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.css']
+  selector: 'app-productos3',
+  templateUrl: './productos3.component.html',
+  styleUrls: ['./productos3.component.css']
 })
-export class ProductosComponent {
+export class Productos3Component {
   quantityMap: { [key: string]: number } = {};
 
   ngOnInit() {
