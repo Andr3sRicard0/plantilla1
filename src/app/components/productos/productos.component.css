@@ -83,6 +83,8 @@ h1 {
 }
 
 .productosItemsBox {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     width: 100%;
     background: #e4e4e4;
@@ -99,7 +101,6 @@ h1 {
     margin: 0 auto;
     height: 250px;
     width: 70%;
-    
     transition: 1s;
 }
 
@@ -108,7 +109,7 @@ h1 {
 }
 
 .productosItems img:hover {
-    transform: scale(1.07);
+    transform: scale(0.9);
     transition: 0.5s;
 }
 

@@ -1,0 +1,23 @@
+<!-- Carrousel Inicio -->
+<div class="carrusel">
+    <div class="slideItem active">
+        <img loading="lazy" src="/assets/img/carrusel/extintor1.webp" alt="Extintor en uso">
+    </div>
+    <div class="slideItem">
+        <img loading="lazy" src="/assets/img/carrusel/extintor2.webp" alt="Mantenimiento de extintor">
+    </div>
+    <div class="slideItem">
+        <img loading="lazy" src="/assets/img/carrusel/extintor3.webp" alt="Equipos contra incendios">
+    </div>
+</div>
+<!-- Carrousel Fin -->
+<h1 class="text-center">Recarga de Extintores</h1>
+<div class="containerBox text-center">
+    <div class="containerItems" *ngFor="let servicios of dataServicios">
+        <img src="{{servicios.imagen}}" class="img-fluid">
+        <h5>{{servicios.nombre}}</h5>
+        <p>{{servicios.detalles}}</p>
+        <p><strong>${{servicios.precio}}</strong></p>
+        <button class="btn btn-danger" (click)="getWhatsAppLink(servicios.nombre)">Solicitar</button>
+    </div>
+</div>

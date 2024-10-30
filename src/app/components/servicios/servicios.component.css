@@ -1,0 +1,112 @@
+/*Carrusel Inicio*/
+.carrusel {
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.carrusel img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+    transition: opacity 2s ease;
+    object-fit: cover;
+}
+.textBoxCarousel{
+    position: absolute;
+    bottom: 0px;
+    opacity: 0;
+    text-align: start;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: opacity 2s ease;
+}
+.titleCarousel{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff781e;
+}
+.textCarousel{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.slideItem.active img{
+    opacity: 1;
+}
+.slideItem.active .textBoxCarousel{
+    opacity: 1;
+}
+/*Carrusel Fin*/
+h1, h5{
+    color: #ff2c2c;
+}
+.containerBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.containerItems{
+    background: #e4e4e4;
+    width: calc(20% - 6px);
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px;
+    transition: 1s;
+}
+.containerItems img{
+    width: 100%;
+    height: 180px;
+}
+h5{
+    font-size: 14px;
+}
+p{
+    font-size: 12px;
+}
+.btn{
+    border-radius: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+@media (max-width:1050px){
+    .containerItems{
+        width:calc(25% - 6px);
+        transition: 1s;
+    }
+}
+@media (max-width:900px){
+    .containerItems{
+        width:calc(33.3% - 6px);
+        transition: 1s;
+    }
+}
+@media (max-width:750px){
+    .containerItems{
+        width:calc(50% - 6px);
+        transition: 1s;
+    }
+}
+@media (max-width:400px){
+    .containerItems{
+        width:calc(100% - 6px);
+        transition: 1s;
+    }
+}

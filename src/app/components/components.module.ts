@@ -1,36 +1,34 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../app-routing.module';
-import { Productos2Component } from './productos2/productos2.component';
-import { Productos3Component } from './productos3/productos3.component';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductosComponent } from './productos/productos.component';
 import { HomeComponent } from './home/home.component';
 import { MenuModule } from '../menu/menu.module';
+import { ServiciosComponent } from './servicios/servicios.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     DashboardComponent,
     HomeComponent,
     NotFoundComponent,
     ProductosComponent,
-    Productos2Component,
-    Productos3Component
+    ServiciosComponent
   ],
   exports:[
     DashboardComponent,
     HomeComponent,
     NotFoundComponent,
-    ProductosComponent,
-    Productos2Component,
-    Productos3Component
+    ProductosComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
     MenuModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ]
 })
 export class ComponentsModule { }

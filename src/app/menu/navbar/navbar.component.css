@@ -73,4 +73,8 @@ a:hover {
         color: #ffffff;
     }
 }
-/*Fin Navbar*/
+@media(max-width: 500px){
+    .navSubtitles{
+        font-size: 16px;
+    }
+}
