@@ -89,7 +89,7 @@ export class ProductosComponent {
     }).then(response => {
       if (response.isConfirmed) {
         const cantidad = this.quantityMap[productoNombre];
-        const phoneNumber = '593984677719'; // Reemplaza con tu número de WhatsApp
+        const phoneNumber = '593984489550'; // Reemplaza con tu número de WhatsApp
         const message = `Requiero de este producto: ${productoNombre} con cantidad: ${cantidad}`;
         const encodedMessage = encodeURIComponent(message);
         window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;

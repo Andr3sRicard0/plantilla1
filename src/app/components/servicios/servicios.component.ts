@@ -42,7 +42,7 @@ export class ServiciosComponent {
   }
 
   getWhatsAppLink(servicioNombre: string){
-    const phoneNumber = '593984677719'; // Reemplaza con tu número de WhatsApp
+    const phoneNumber = '593984489550'; // Reemplaza con tu número de WhatsApp
     const message = `Deseo realizar una recarga del servicio: ${servicioNombre}`;
     const encodedMessage = encodeURIComponent(message);
     window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
